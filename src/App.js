@@ -6,7 +6,7 @@ import Wrapper from "./components/Wrapper";
 
 function App() {
   return (
-    <div>
+    <div> "Hello"
       <Navbar />
       <Wrapper>
         <Gallery />
