@@ -1,29 +1,19 @@
-import React from 'react';
-import './App.css';
-import axios from "axios";
+import React from "react";
+import Gallery from "./pages/Gallery";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Wrapper from "./components/Wrapper";
 
-class App extends React.Component {
-
-  state = {
-    employees: [],
-  };
-
-  componentDidMount() {
-      axios.get(`https://randomuser.me/api/?results=20`)
-        .then(res => {
-          this.setState({ employees: res.data.results });
-        });
-  }
-
-
-  render() {
-    return (
-      <div className="App">
-        {this.state.employees.length}
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Wrapper>
+        <Gallery />
+      </Wrapper>
+      <Footer />
+    </div>
+  );
 }
 
 export default App;
-
