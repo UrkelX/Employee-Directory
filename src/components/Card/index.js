@@ -5,7 +5,7 @@ import React from "react";
 // import CardHeading from "../CardHeading";
 import "./style.css";
 
-function Card({ title, titleTwo, image, profileUrl, email, handleBtnClick }) {
+function Card({ title, titleTwo, image, email, handleBtnClick }) {
   return (
     <div ClassName="md:flex bg-white shadow text-gray-800 my-4 py-4 px-10 rounded-md items-center justify-between hover:bg-gray-300">
       {/* <CardHeading title={title} />
@@ -29,7 +29,7 @@ function Card({ title, titleTwo, image, profileUrl, email, handleBtnClick }) {
         src={image}
         alt="employee"
       />
-      <p className="font-bold text-md">{title}{titleTwo}</p>
+      <p className="font-bold text-md">{title} {titleTwo}</p>
       <p>Content Here</p>
       <p>{email}</p>
       <p>More Content Here</p>
