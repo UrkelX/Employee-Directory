@@ -1,8 +1,8 @@
 import React from "react";
-import CardBody from "../CardBody";
-import CardBtn from "../CardBtn";
-import CardImg from "../CardImage";
-import CardHeading from "../CardHeading";
+// import CardBody from "../CardBody";
+// import CardBtn from "../CardBtn";
+// import CardImg from "../CardImage";
+// import CardHeading from "../CardHeading";
 import "./style.css";
 
 function Card({ title, image, profileUrl, email, handleBtnClick }) {
