@@ -13,8 +13,7 @@ export default {
             firstName: employee.name.first,
             lastName: employee.name.last,
             email: employee.email,
-            picture: employee.picture.thumbnail,
-            // username: employee.login.username
+            picture: employee.picture.thumbnail
           };
         });
       });
