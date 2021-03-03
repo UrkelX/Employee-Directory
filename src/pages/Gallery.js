@@ -57,14 +57,14 @@ function Gallery() {
     <div>
       <h1 className="text-center">Employee Directory</h1>
       <p className="text-center h3">Use search and filters to browse employees</p>
-      <Row>
+      
         <Card
           title={employee.firstName}
           image={employee.picture}
           profileUrl={employee.profileUrl}
           handleBtnClick={handleBtnClick}
         />
-      </Row>
+    
     </div>
   );
 }
