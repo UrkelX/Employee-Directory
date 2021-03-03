@@ -8,7 +8,7 @@ import "./style.css";
 function Card({ title, image, profileUrl, email, handleBtnClick }) {
   return (
     <div ClassName="md:flex bg-white shadow text-gray-800 my-4 py-4 px-10 rounded-md items-center justify-between hover:bg-gray-300">
-      <CardHeading title={title} />
+      {/* <CardHeading title={title} />
       <CardImg image={image} />
       <CardBody profileUrl={profileUrl} />
       {!image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
@@ -21,14 +21,14 @@ function Card({ title, image, profileUrl, email, handleBtnClick }) {
         style={{ opacity: image ? 1 : 0 }}
         onClick={handleBtnClick}
         data-value="next"
-      />
+      /> */}
 
-      {/* <img
+      <img
         style={{ maxWidth: "60px" }}
         className="rounded-full shadow-md border border-gray-300"
         src={image}
         alt="employee"
-      /> */}
+      />
       <p className="font-bold text-md">{title}</p>
       <p>Content Here</p>
       <p className="text-blue-500">{email}</p>
