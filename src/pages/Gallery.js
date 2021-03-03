@@ -59,9 +59,10 @@ function Gallery() {
       
         <Card
           title={employee.firstName}
+          titleTwo={employee.lastName}
           image={employee.picture}
-          profileUrl={employee.profileUrl}
-          handleBtnClick={handleBtnClick}
+          // profileUrl={employee.profileUrl}
+          // handleBtnClick={handleBtnClick}
         />
     
     </div>
