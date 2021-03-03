@@ -60,7 +60,7 @@ function Gallery() {
       <Row>
         <CardContainer
           title={employee.firstName}
-          image={employee.image}
+          image={employee.picture.thumbnail}
           profileUrl={employee.profileUrl}
           handleBtnClick={handleBtnClick}
         />
