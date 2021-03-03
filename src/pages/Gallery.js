@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
 import Card from "../components/Card";
-import Row from "../components/Row";
 
 function Gallery() {
   const [employee, setEmployee] = useState({});
