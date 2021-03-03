@@ -5,35 +5,19 @@ import React from "react";
 // import CardHeading from "../CardHeading";
 import "./style.css";
 
-function Card({ title, titleTwo, image, phone, email, handleBtnClick }) {
-  return (
-    <div ClassName="md:flex bg-white shadow text-gray-800 my-4 py-4 px-10 rounded-md items-center justify-between hover:bg-gray-300">
-      {/* <CardHeading title={title} />
-      <CardImg image={image} />
-      <CardBody profileUrl={profileUrl} />
-      {!image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
-      <CardBtn
-        style={{ opacity: image ? 1 : 0 }}
-        onClick={handleBtnClick}
-        data-value="back"
-      />
-      <CardBtn
-        style={{ opacity: image ? 1 : 0 }}
-        onClick={handleBtnClick}
-        data-value="next"
-      /> */}
 
-      <img
-        style={{ maxWidth: "60px" }}
-        className="rounded-full shadow-md border border-gray-300"
-        src={image}
-        alt="employee"
-      />
-      <p className="font-bold text-md">{title} {titleTwo}</p>
-      <p>{phone}</p>
-      <p>{email}</p>
-      {/* <p>{username}</p> */}
-    </div>
+
+function Card(props) {
+  return (
+
+      <div className="md:flex bg-white shadow text-gray-800 my-4 py-4 px-10 rounded-md items-center justify-between hover:bg-gray-300">
+          <div><img alt={props.last} src={props.image}></img></div>
+          <div>{props.title} {props.first} {props.last} </div>
+          <div>{props.gender}</div>
+          <div>{props.age}</div>
+          <div>{props.phone}</div>
+          <div>{props.email}</div>
+      </div>
   );
 }
 
