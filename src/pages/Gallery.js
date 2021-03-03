@@ -59,7 +59,7 @@ function Gallery() {
       <p className="text-center h3">Use search and filters to browse employees</p>
       <Row>
         <CardContainer
-          title={employee.login}
+          title={employee.firstName}
           image={employee.image}
           profileUrl={employee.profileUrl}
           handleBtnClick={handleBtnClick}
