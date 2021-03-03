@@ -63,10 +63,10 @@ function Gallery() {
           titleTwo={employee.lastName}
           phone={employee.phone}
           email={employee.email}
-          username={employee.login.username}
+          // username={employee.login.username}
     
           // profileUrl={employee.profileUrl}
-          // handleBtnClick={handleBtnClick}
+          handleBtnClick={handleBtnClick}
         />
     
     </div>

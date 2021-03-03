@@ -14,7 +14,7 @@ export default {
             lastName: employee.name.last,
             email: employee.email,
             picture: employee.picture.thumbnail,
-            username: employee.login.username
+            // username: employee.login.username
           };
         });
       });
