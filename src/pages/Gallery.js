@@ -44,6 +44,7 @@ function Gallery() {
   }
 
   function loadEmployees() {
+    console.log(API.fetchEmployees())
     API.fetchEmployees()
       .then(employees => {
         setEmployees(employees);
