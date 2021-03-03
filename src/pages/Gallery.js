@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
-import CardContainer from "../components/CardContainer";
+import Card from "../components/Card";
 import Row from "../components/Row";
 
 function Gallery() {
@@ -58,7 +58,7 @@ function Gallery() {
       <h1 className="text-center">Employee Directory</h1>
       <p className="text-center h3">Use search and filters to browse employees</p>
       <Row>
-        <CardContainer
+        <Card
           title={employee.firstName}
           image={employee.picture}
           profileUrl={employee.profileUrl}
