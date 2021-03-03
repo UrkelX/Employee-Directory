@@ -54,8 +54,8 @@ function Gallery() {
 
   return (
     <div>
-      <h1 className="text-center">Welcome to LinkedUp</h1>
-      <p className="text-center h3">Click on the arrows to browse users</p>
+      <h1 className="text-center">Employee Directory</h1>
+      <p className="text-center h3">Use search anf filters to browse users</p>
       <Row>
         <CardContainer
           title={user.login}
