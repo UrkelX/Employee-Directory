@@ -31,7 +31,7 @@ function Card({ title, titleTwo, image, profileUrl, email, handleBtnClick }) {
       />
       <p className="font-bold text-md">{title}{titleTwo}</p>
       <p>Content Here</p>
-      <p className="text-blue-500">{email}</p>
+      <p>{email}</p>
       <p>More Content Here</p>
     </div>
   );
