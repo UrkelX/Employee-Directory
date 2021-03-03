@@ -1,18 +1,12 @@
 import React from "react";
-import Card from "../Card";
 import "./style.css";
 
-function CardContainer({ title, image, profileUrl, handleBtnClick }) {
+function CardContainer(props) {
   return (
-    <div className="jumbotron card-container">
-      <Card
-        title={title}
-        image={image}
-        profileUrl={profileUrl}
-        handleBtnClick={handleBtnClick}
-      />
-    </div>
-  );
+      <div className="container max-w-6xl px-10 mx-auto">
+          {props.children}
+      </div>
+  )
 }
 
 export default CardContainer;
