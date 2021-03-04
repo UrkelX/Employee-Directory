@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Gallery from "./pages/Gallery"
 
 
 
@@ -8,8 +9,8 @@ function App() {
   return (
     <div>
     <Navbar />
+    <Gallery />
     <Footer />
-
     </div>
   );
 }

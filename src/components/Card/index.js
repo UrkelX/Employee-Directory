@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 
-function Card({ firstName, picture, phone, email }) {
+function Card({ name, image, phone, email }) {
   return (
     <div>
-      {firstName}
-      {picture}
+      {name}
+      {image}
       {phone}
       {email}
     </div>

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
-import CardContainer from "../components/CardContainer";
-import Row from "../components/Row";
+import Card from "../components/Card";
 
 function Gallery() {
   const [employee, setUser] = useState({});
@@ -54,18 +53,17 @@ function Gallery() {
 
   return (
     <div>
-      <h1 className="text-center">Welcome to LinkedUp</h1>
-      <p className="text-center h3">Click on the arrows to browse employees</p>
-      <Row>
-        <CardContainer
-          firstName={employee.name.first}
-          picture={employee.picture}
+      <h1 className="text-center">Employee Directory</h1>
+      <p className="text-center h3">Browse employees</p>
+
+        <Card
+          name={employee.name}
+          image={employee.picture}
           phone={employee.phone}
           email={employee.email}
           // profileUrl={employee.profileUrl}
           handleBtnClick={handleBtnClick}
         />
-      </Row>
     </div>
   );
 }

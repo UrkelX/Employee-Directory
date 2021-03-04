@@ -4,10 +4,10 @@ import axios from "axios";
 export default {
   fetchUsers: function() {
     return axios
-      .get("https://randomuser.me/api/")
+      .get("https://randomuser.me/api/?results=20")
       .then(res => {
-        const users = res.data;
-        return users.map(user => {
+        const employees = res.data;
+        return employees.map(user => {
           return {
             name: user.name,
             email: user.email,
