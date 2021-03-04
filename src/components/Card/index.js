@@ -5,20 +5,19 @@ import CardImg from "../CardImage";
 import CardHeading from "../CardHeading";
 import "./style.css";
 
-function Card({ title, image, profileUrl, handleBtnClick }) {
+function Card({ firstName, picture, phone, email, handleBtnClick }) {
   return (
     <div>
-      <CardHeading title={title} />
-      <CardImg image={image} />
-      <CardBody profileUrl={profileUrl} />
-      {!image && <i className="fa fa-spinner fa-spin" aria-hidden="true" />}
+      <CardHeading firstName={firstName} />
+      <CardImg picture={picture} />
+      <CardBody phone={phone} email={email}/>
       <CardBtn
-        style={{ opacity: image ? 1 : 0 }}
+        style={{ opacity: picture ? 1 : 0 }}
         onClick={handleBtnClick}
         data-value="back"
       />
       <CardBtn
-        style={{ opacity: image ? 1 : 0 }}
+        style={{ opacity: picture ? 1 : 0 }}
         onClick={handleBtnClick}
         data-value="next"
       />

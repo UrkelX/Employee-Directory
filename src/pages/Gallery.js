@@ -4,30 +4,30 @@ import CardContainer from "../components/CardContainer";
 import Row from "../components/Row";
 
 function Gallery() {
-  const [user, setUser] = useState({});
-  const [users, setUsers] = useState([]);
+  const [employee, setUser] = useState({});
+  const [employees, setUsers] = useState([]);
   const [userIndex, setUserIndex] = useState(0);
 
-  // When the component mounts, a call will be made to get random users.
+  // When the component mounts, a call will be made to get random employees.
   useEffect(() => {
     loadUsers();
   }, []);
 
   function nextUser(userIndex) {
-    // Ensure that the user index stays within our range of users
-    if (userIndex >= users.length) {
+    // Ensure that the employee index stays within our range of employees
+    if (userIndex >= employees.length) {
       userIndex = 0;
     }
-    setUser(users[userIndex]);
+    setUser(employees[userIndex]);
     setUserIndex(userIndex);
   }
 
   function previousUser(userIndex) {
-    // Ensure that the user index stays within our range of users
+    // Ensure that the employee index stays within our range of employees
     if (userIndex < 0) {
-      userIndex = users.length - 1;
+      userIndex = employees.length - 1;
     }
-    setUser(users[userIndex]);
+    setUser(employees[userIndex]);
     setUserIndex(userIndex);
   }
 
@@ -45,9 +45,9 @@ function Gallery() {
 
   function loadUsers() {
     API.fetchEmployees()
-      .then(users => {
-        setUsers(users);
-        setUser(users[0]);
+      .then(employees => {
+        setUsers(employees);
+        setUser(employees[0]);
       })
       .catch(err => console.log(err));
   }
@@ -55,12 +55,14 @@ function Gallery() {
   return (
     <div>
       <h1 className="text-center">Welcome to LinkedUp</h1>
-      <p className="text-center h3">Click on the arrows to browse users</p>
+      <p className="text-center h3">Click on the arrows to browse employees</p>
       <Row>
         <CardContainer
-          title={user.login}
-          image={user.image}
-          profileUrl={user.profileUrl}
+          firstName={employee.name.first}
+          picture={employee.picture}
+          phone={employee.phone}
+          email={employee.email}
+          // profileUrl={employee.profileUrl}
           handleBtnClick={handleBtnClick}
         />
       </Row>
