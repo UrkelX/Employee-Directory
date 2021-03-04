@@ -59,7 +59,8 @@ function Gallery() {
       
         <Card
           image={employee.picture}
-          name={employee.name}
+          firstName={employee.name.first}
+          lastName={employee.name.last}
           email={employee.email}
           phone={employee.phone}
           handleBtnClick={handleBtnClick}
