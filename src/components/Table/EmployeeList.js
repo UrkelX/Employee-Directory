@@ -4,8 +4,9 @@ import Card from "../Card";
 function EmployeeList({ data }) {
   return data.map((employee) => (
     <Card
-      title={employee.name.first}
-      image={employee.picture}
+      picture={employee.picture}
+      firstName={employee.name.first}
+      lastName={employee.name.last}
       email={employee.email}
       phone={employee.phone}
     />

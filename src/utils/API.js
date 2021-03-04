@@ -9,7 +9,6 @@ export default {
     const employees = res.data.results;
     return employees.map(employee => {
       return {
-        id: employee.id.value,
         firstName: employee.name.first,
         lastName: employee.name.last,
         email: employee.email,

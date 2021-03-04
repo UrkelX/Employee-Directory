@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
-import Card from "../components/Card";
+import EmployeeList from "../components/Table";
 
 function Gallery() {
   const [employee, setEmployee] = useState({});
@@ -57,14 +57,7 @@ function Gallery() {
       <h1 className="text-center">Employee Directory</h1>
       <p className="text-center h3">Use search and filters to browse employees</p>
       
-        <Card
-          picture={employee.picture}
-          firstName={employee.name.first}
-          // lastName={employee.name.last}
-          email={employee.email}
-          phone={employee.phone}
-          handleBtnClick={handleBtnClick}
-        />
+        <EmployeeList/>
     
     </div>
   );
