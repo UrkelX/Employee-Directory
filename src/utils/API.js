@@ -13,6 +13,7 @@ export default {
         firstName: employee.name.first,
         lastName: employee.name.last,
         email: employee.email,
+        phone: employee.phone,
         picture: employee.picture.thumbnail
       };
     });
