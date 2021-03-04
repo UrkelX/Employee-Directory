@@ -44,7 +44,7 @@ function Gallery() {
   }
 
   function loadUsers() {
-    API.fetchUsers()
+    API.fetchEmployees()
       .then(users => {
         setUsers(users);
         setUser(users[0]);
