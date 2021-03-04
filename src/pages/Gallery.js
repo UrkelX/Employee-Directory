@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import API from "../utils/API";
-import EmployeeList from "../components/Table";
+import EmployeeList from "../components/Table/EmployeeList";
 
 function Gallery() {
   const [employee, setEmployee] = useState({});
