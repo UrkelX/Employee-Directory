@@ -3,7 +3,7 @@ import EmployeeList from "./components/Table/EmployeeList";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Wrapper from "./components/Wrapper";
-import Inter from "./components/Inter";
+import Inter from "./components/Inter/Inter";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
