@@ -58,7 +58,7 @@ function Gallery() {
       <p className="text-center h3">Use search and filters to browse employees</p>
       
         <Card
-          image={employee.image}
+          image={employee.picture}
           name={employee.name}
           email={employee.email}
           phone={employee.phone}
